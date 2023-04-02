@@ -23,9 +23,30 @@ module FitnessOntology
         repo.query(q)
       end
 
-      def strength_exercises
-        query("SELECT * WHERE { ?subject rdf:type edb:StrengthExercise }").map do |result|
-          result[:subject].fragment
+      def exercises_by(types: [])
+        if types.size > 1
+          q = %(
+            SELECT *
+            WHERE {
+              ?subject rdf:type ?exercise_type .
+              FILTER (?exercise_type IN ( #{types.join(",")} )  ) .
+            }
+          )
+          query(q).map do |result|
+            {exercise: result[:subject].fragment,
+             type: result[:exercise_type].fragment}
+          end
+        else
+          q = %(
+            SELECT *
+            WHERE {
+              ?subject rdf:type #{types.first} .
+            }
+          )
+          query(q).map do |result|
+            {exercise: result[:subject].fragment,
+             type: types.first.split(":").last}
+          end
         end
       end
 
