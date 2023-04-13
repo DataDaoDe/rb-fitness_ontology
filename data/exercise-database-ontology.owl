@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#"
      xml:base="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:edb="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:exercise-database="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database"/>
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database">
+        <owl:imports rdf:resource="http://www.w3.org/2008/05/skos"/>
+    </owl:Ontology>
     
 
 
@@ -256,6 +261,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Barbell_Lunge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Barbell_Lunge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#StrengthExercise"/>
+        <hasDynamicStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gastrocnemius"/>
+        <hasDynamicStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Hamstrings"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Erector_Spinae"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Medius"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Minimus"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Obliques"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadratus_Lumborum"/>
+        <hasStabilizer rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Tibialis_Anterior"/>
+        <hasSynergist rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Adductor_Magnus"/>
+        <hasSynergist rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Maximus"/>
+        <hasSynergist rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Soleus"/>
+        <hasTarget rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadriceps_Femoris"/>
+        <rdfs:label xml:lang="de">Ausfallschritt mit Langhantel</rdfs:label>
+        <rdfs:label xml:lang="en">Barbell Lunge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Barbell_Sumo_Deadlift -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Barbell_Sumo_Deadlift">
@@ -475,6 +502,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Medius -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Medius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Muscle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Minimus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Gluteus_Minimus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Muscle"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Hamstrings -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Hamstrings">
@@ -668,6 +711,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadratus_Lumborum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadratus_Lumborum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Muscle"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadriceps_Femoris -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Quadriceps_Femoris">
@@ -799,6 +850,14 @@
     <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Teres_Minor -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Teres_Minor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Muscle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Tibialis_Anterior -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Tibialis_Anterior">
         <rdf:type rdf:resource="http://www.semanticweb.org/johnfaucett/ontologies/2023/2/exercise-database#Muscle"/>
     </owl:NamedIndividual>
     
