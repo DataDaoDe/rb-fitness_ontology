@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fitness_ontology (0.2.3)
+    fitness_ontology (0.2.4)
       linkeddata (~> 3)
 
 GEM
